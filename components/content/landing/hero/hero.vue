@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[0] lg:px-[4rem] mt-[0] lg:mt-[8rem]">
+  <div class="px-[0] lg:px-[4rem] mt-[0] lg:mt-[6rem]">
     <div class="swiper hero-carousel">
       <div class="swiper-wrapper">
         <template
@@ -48,7 +48,7 @@
               :class="`progress-slide-${progressIndex}`"
               :value="progressValues[progressIndex]"
               max="100"
-              @click="switchToSlide(index)"
+              @click="switchToSlide(progressIndex)"
             ></progress>
           </template>
         </div>
@@ -77,10 +77,10 @@ export default defineComponent({
         modules: [Autoplay],
         slidesPerView: 1,
         loop: true,
-        // autoplay: {
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
         on: {
           autoplayTimeLeft: (s, time, progress) => {
             const activeIndex = s.realIndex;

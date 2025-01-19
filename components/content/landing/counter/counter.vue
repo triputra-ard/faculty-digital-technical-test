@@ -16,7 +16,8 @@
             ></component>
             <h4 class="text-xl text-black font-medium">{{ counter.title }}</h4>
             <h3 class="text-3xl text-black font-bold">
-              0 {{ counter.valueAffix }}
+              <span class="counter" :data-target="counter.value">0</span
+              >{{ counter.valueAffix }}
             </h3>
           </div>
         </div>
@@ -47,6 +48,7 @@
 export default defineComponent({
   setup() {
     const webContent = useWebContentStore();
+
     return {
       webContent,
     };
@@ -59,6 +61,24 @@ export default defineComponent({
         count++;
       }, 20);
     },
+  },
+  mounted() {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const c = +counter.innerText;
+        const increment = target / 200;
+        if (c < target) {
+          counter.innerText = `${Math.ceil(c + increment)}`;
+          setTimeout(updateCounter, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
   },
 });
 </script>
