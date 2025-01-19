@@ -1,0 +1,30 @@
+// Import required Bootstrap dependencies
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Import only the button styles
+@import "bootstrap/scss/buttons";
+
+.btn {
+  &.cta-button-black {
+    background-color: var(--primary-black);
+    color: var(--primary-white);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--primary-blue);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &.cta-button-white {
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--primary-black);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

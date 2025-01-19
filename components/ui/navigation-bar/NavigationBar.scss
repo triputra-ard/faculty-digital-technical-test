@@ -1,0 +1,52 @@
+header {
+  position: relative;
+}
+.topbar-marquee {
+  display: block;
+  padding: 0.9rem 0;
+  .marquee-text {
+    font-size: 0.8rem;
+    line-height: 1.09;
+    font-weight: 500;
+    position: relative;
+    color: var(--primary-white);
+    margin-right: 2.5rem;
+    &:before {
+      content: ".";
+      left: -1.5rem;
+      position: absolute;
+      line-height: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  padding: 0.2rem 1.5rem;
+  z-index: 1000;
+  .navigation-bar-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .brand {
+      .brand-image {
+        height: 5rem;
+      }
+    }
+    .navigation-menu-list {
+      display: inline-flex;
+      flex-direction: row;
+      .navigation-menu-item {
+        padding: 0.8rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navigation-menu-link {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

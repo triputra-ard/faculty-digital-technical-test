@@ -1,0 +1,33 @@
+.accordion {
+  background-color: var(--cool-grey-50);
+  border-radius: 2rem;
+  padding: 0 2rem;
+  color: var(--primary-black);
+  .accordion-header {
+    position: relative;
+    width: 100%;
+    .accordion-caret {
+      position: absolute;
+      right: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .accordion-content {
+    padding: 0 0.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &[aria-expanded="true"] {
+    .accordion-content {
+      max-height: 50vh;
+      padding: 1rem 0.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+    .accordion-caret {
+      transform: rotate(180deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

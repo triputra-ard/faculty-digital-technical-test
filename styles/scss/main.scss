@@ -1,0 +1,11 @@
+@import "variables";
+@import "typography";
+
+//component
+@import "button";
+@import "dropdown";
+@import "icon";
+
+body {
+  background-color: var(--primary-white);
+}

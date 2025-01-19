@@ -1,0 +1,11 @@
+.icon-color {
+  &.is-red {
+    color: var(--primary-red);
+  }
+  &.is-blue {
+    color: var(--primary-blue);
+  }
+  &.is-yellow {
+    color: var(--primary-yellow);
+  }
+}

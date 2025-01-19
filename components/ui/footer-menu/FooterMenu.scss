@@ -1,0 +1,26 @@
+footer {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  .footer-menu {
+    padding: 5rem 0;
+    position: relative;
+    img.footer-brand {
+      height: auto;
+      width: 13rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .copyright-section {
+    background-color: var(--cool-grey-900);
+  }
+}
+.wave-border {
+  background-color: var(--primary-yellow);
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: -1px;
+  }
+}
