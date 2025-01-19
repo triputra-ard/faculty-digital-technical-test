@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/color-mode",
     "nuxt-svgo",
+    "@nuxt/image",
   ],
   plugins: ["@/plugins/swiper.client.ts"],
   vite: {
