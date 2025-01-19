@@ -6,7 +6,7 @@
     >
       <div class="flex flex-row flex-wrap parallax my-[5rem] lg:my[1.5rem]">
         <div
-          class="col-12 col-lg-6 lg:py-[10rem] lg:px-[5rem] parallax-content order-2 lg:order-1 mt-[2rem] lg:px-[5rem]"
+          class="col-12 col-lg-6 !order-[2] lg:!order-[1] lg:py-[10rem] lg:px-[5rem] parallax-content mt-[2rem]"
         >
           <h5
             class="text-sm font-semibold text-[var(--secondary-blue)] text-center lg:text-justify"
@@ -21,7 +21,7 @@
           <p class="text-center lg:text-left mb-[1.5rem]">
             {{ parallax.description }}
           </p>
-          <div class="col-6 col-lg-5 grid mx-auto lg:mx-0">
+          <div class="col-6 col-lg-6 grid mx-auto lg:mx-0">
             <button
               role="button"
               class="btn btn-lg cta-button-white !rounded-3xl"
@@ -33,10 +33,10 @@
           </div>
         </div>
         <div
-          class="col-12 col-lg-6 parallax-image-container order-1 lg:order-2"
+          class="col-12 col-lg-6 !order-[1] lg:!order-[2] parallax-image-container"
         >
           <img
-            class="h-[30rem] !rounded-[2rem] parallax-image"
+            class="h-[30rem] !rounded-[2rem] parallax-image mx-[1rem] lg:mx-0"
             :src="parallax.image"
             :alt="`Image of ${parallax.title}`"
           />
