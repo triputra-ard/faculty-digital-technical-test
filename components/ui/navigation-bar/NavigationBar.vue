@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="hidden">
     <div class="bg-black">
       <marquee class="topbar-marquee" behavior="scroll" direction="left">
         <div class="flex flex-nowrap flex-row items-center">

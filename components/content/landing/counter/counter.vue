@@ -34,7 +34,7 @@
         <div class="col-12 col-lg-2 d-grid">
           <button
             role="button"
-            class="btn cta-button-black btn-lg !rounded-[4rem] block !py-[0.8rem]"
+            class="btn cta-button-black btn-lg !rounded-[4rem] !py-[0.8rem]"
           >
             <span class="font-bold text-lg">About Re:Nue</span>
           </button>

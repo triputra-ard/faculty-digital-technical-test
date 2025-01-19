@@ -19,8 +19,14 @@ declare global {
     url: string;
     icon?: string;
   }
+  interface InfHero extends Array<InfHeroItem> {}
   interface InfHeroItem {
     title: string;
+    image: string;
+    brand?: string;
+    subtitle?: string;
+    ctaText: string;
+    ctaUrl: string;
   }
   interface InfCounterContent extends Array<InfCounterItem> {}
   interface InfCounterItem {

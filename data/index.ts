@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import logoBrand from "@/assets/icons/renue_logo_reverse.png";
 const state = () => ({});
 const getters = {
   getNavigationMenu() {
@@ -245,7 +246,24 @@ const getters = {
     return accordion;
   },
   getHeroList() {
-    const hero: InfHero = [];
+    const hero: InfHero = [
+      {
+        title: "Give. Thrift. Uplift",
+        image: "/images/slide-1.png",
+        brand: logoBrand,
+        ctaText: "Donate your items",
+        ctaUrl: "/",
+      },
+      {
+        title: "Lorem ipsum dolor sit amet",
+        image: "/images/slide-2.png",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit eros ac faucibus eleifend. Integer sagittis ornare dui non maximus. Fusce quis rhoncus est. Vestibulum enim tortor, aliquam sit amet augue ac, molestie semper dui.",
+        ctaText: "Start thrifting",
+        ctaUrl: "/",
+      },
+    ];
+    return hero;
   },
 };
 export const useWebContentStore = defineStore("webcontent-store", {

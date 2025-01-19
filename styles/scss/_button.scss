@@ -1,8 +1,3 @@
-// Import required Bootstrap dependencies
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-
 // Import only the button styles
 @import "bootstrap/scss/buttons";
 
@@ -24,6 +19,7 @@
 
     &:hover {
       background-color: var(--primary-black);
+      color: var(--primary-white);
       transition: all 0.3s ease-in-out;
     }
   }

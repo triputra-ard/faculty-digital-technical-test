@@ -1,8 +1,14 @@
+// Import required Bootstrap dependencies
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
 @import "variables";
 @import "typography";
 
 //component
 @import "button";
+@import "progress";
 @import "dropdown";
 @import "icon";
 
