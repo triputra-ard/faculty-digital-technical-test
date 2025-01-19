@@ -1,37 +1,56 @@
-# The Tailwind Web Starter with Nuxt
+# Nuxt.js Project with Shadcn-vue, Radix, Tailwind CSS, Pinia, and Bootstrap
 
-## Description
+A modern Nuxt.js application that leverages cutting-edge technologies and libraries to deliver an exceptional frontend development experience. This project integrates **Shadcn-vue**, **Radix**, **Tailwind CSS**, **Pinia**, and **Bootstrap** for robust, accessible, and scalable UI development.
 
-Project boilerplate for web applications using Nuxt.js
+---
 
-## Dependencies
+## Table of Contents
 
-### Framework
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-- Nuxt.js
+---
 
-### UI
+## Requirements
 
-- Shadcn-vue
-- Radix
-- Tailwindcss
-- Pinia
-- Tanstack Table
+Before starting, ensure you have the following installed on your system:
 
-### Icons
+- Node.js (v16 or higher)
+- npm or yarn
+- Nuxt.js (v3+)
 
-- Material Design Icons
-- Lucide Vue Next
+---
 
-## Todo
+## Installation
 
-### Integration
+Follow these steps to set up the project locally:
 
-[] SSO Oauth integration
+1. **Clone the Repository:**
 
-### Guide
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
 
-#### UI Guide
+   ```
 
-- Guide to Setup Dark Theme
-- Guide to Setup Primary Color
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   # OR
+   yarn install
+   ```
+
+3. **Start the Development Server:**
+
+   ```bash
+   npm run dev
+   # OR
+   yarn dev
+   ```

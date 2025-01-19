@@ -51,7 +51,7 @@
                   id="flexRadioDefault1"
                 />
                 <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
+                  Email
                 </label>
               </div>
               <div class="form-check">
@@ -63,7 +63,7 @@
                   checked
                 />
                 <label class="form-check-label" for="flexRadioDefault2">
-                  Default checked radio
+                  Mobile Number
                 </label>
               </div>
             </div>
