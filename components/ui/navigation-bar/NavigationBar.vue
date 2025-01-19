@@ -1,5 +1,5 @@
 <template>
-  <header class="hidden">
+  <header>
     <div class="bg-black">
       <marquee class="topbar-marquee" behavior="scroll" direction="left">
         <div class="flex flex-nowrap flex-row items-center">
@@ -12,7 +12,11 @@
         </div>
       </marquee>
     </div>
-    <nav class="navigation-bar bg-white text-black">
+    <nav
+      class="navigation-bar bg-white text-black"
+      aria-active="false"
+      ref="navigationBar"
+    >
       <div class="navigation-bar-content">
         <a href="/" class="brand me-[0.5rem]">
           <img
@@ -21,7 +25,24 @@
             alt="Re:Nue brand logo with color black and red"
           />
         </a>
-        <ul class="navigation-menu-list mx-auto">
+        <button class="toggle-hamburger" @click="toggleNavbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="navigation-menu-list mx-[0] lg:mx-auto">
+          <li class="navigation-menu-item p-3 block lg:!hidden">
+            <a href="/">
+              <img
+                class="h-[3rem]"
+                src="~/assets/icons/renue_logo.png"
+                alt="Re:Nue brand logo with color black and red"
+              />
+            </a>
+            <button class="btn ms-auto" @click="toggleNavbar">
+              <Icon class="text-4xl" icon="mdi-close"></Icon>
+            </button>
+          </li>
           <template
             v-for="(menu, index) in webContent.getNavigationMenu"
             :key="index"
@@ -38,7 +59,7 @@
                   >{{ menu.title }}
                   <icon class="caret" icon="mdi-chevron-down"></icon>
                 </a>
-                <ul class="dropdown-content shadow-lg">
+                <ul class="dropdown-content lg:shadow-lg">
                   <template
                     v-for="(child, childIndex) in menu.children"
                     :key="childIndex"

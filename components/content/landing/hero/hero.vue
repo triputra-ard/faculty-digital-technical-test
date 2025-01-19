@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[0] lg:px-[4rem] mt-[8rem]">
+  <div class="px-[0] lg:px-[4rem] mt-[0] lg:mt-[8rem]">
     <div class="swiper hero-carousel">
       <div class="swiper-wrapper">
         <template
