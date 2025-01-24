@@ -60,9 +60,9 @@ export default defineComponent({
     document.querySelectorAll(".parallax").forEach((section) => {
       ScrollTrigger.create({
         trigger: section,
-        start: "50% center",
+        start: "20% center",
         end: "bottom center",
-        // marker: true,
+        markers: true,
         onEnter: () => section.classList.add("active"),
         onLeave: () => section.classList.remove("active"),
         onEnterBack: () => section.classList.add("active"),
